@@ -770,3 +770,167 @@ footer p {
         padding: 12px 5px;
     }
        }
+/* =================================
+   LANDING PAGE COLOR THEME
+================================= */
+
+:root {
+    --bg-main: #0b1220;
+    --bg-section: #111c2e;
+    --bg-card: #1e293b;
+    --primary: #38bdf8;
+    --primary-dark: #0ea5e9;
+    --text-main: #f8fafc;
+    --text-muted: #cbd5e1;
+    --border: #334155;
+}
+
+/* Main page */
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+}
+
+/* Header */
+.site-header {
+    background: rgba(11, 18, 32, 0.96);
+    border-bottom: 1px solid var(--border);
+}
+
+/* Logo / brand */
+.brand,
+.footer-brand {
+    color: var(--text-main);
+}
+
+.brand span,
+.footer-brand span {
+    color: var(--primary);
+}
+
+/* Navigation */
+.nav-links a {
+    color: var(--text-muted);
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* Hero */
+.hero {
+    background: var(--bg-main);
+}
+
+.hero h1 {
+    color: var(--text-main);
+}
+
+.hero p {
+    color: var(--text-muted);
+}
+
+/* Buttons */
+.btn,
+.primary-btn {
+    background: var(--primary);
+    color: #07111f;
+}
+
+.btn:hover,
+.primary-btn:hover {
+    background: var(--primary-dark);
+    color: #ffffff;
+}
+
+/* Secondary buttons */
+.secondary-btn {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background: transparent;
+}
+
+.secondary-btn:hover {
+    background: var(--primary);
+    color: #07111f;
+}
+
+/* Sections */
+section {
+    background: var(--bg-main);
+}
+
+section:nth-of-type(even) {
+    background: var(--bg-section);
+}
+
+/* Section headings */
+section h2 {
+    color: var(--text-main);
+}
+
+section h2::after {
+    background: var(--primary);
+}
+
+/* Service cards */
+.service-card,
+.value-card,
+.work-card,
+.process-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-main);
+}
+
+.service-card:hover,
+.value-card:hover,
+.work-card:hover,
+.process-card:hover {
+    border-color: var(--primary);
+}
+
+/* Card text */
+.service-card p,
+.value-card p,
+.work-card p,
+.process-card p {
+    color: var(--text-muted);
+}
+
+/* Card headings */
+.service-card h3,
+.value-card h3,
+.work-card h3,
+.process-card h3 {
+    color: var(--text-main);
+}
+
+/* Links inside cards */
+.work-card a {
+    color: var(--primary);
+}
+
+.work-card a:hover {
+    color: #ffffff;
+}
+
+/* Contact section */
+.contact {
+    background: var(--bg-section);
+}
+
+.contact p {
+    color: var(--text-muted);
+}
+
+/* Footer */
+footer {
+    background: #070d18;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+}
+
+footer p {
+    color: var(--text-muted);
+}
