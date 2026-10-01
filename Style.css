@@ -715,3 +715,58 @@ footer p {
     }
 
 }
+
+/* =========================
+   MOBILE NAVIGATION BUTTON
+========================= */
+
+.mobile-menu-toggle {
+    display: none;
+    border: 1px solid #475569;
+    background: #1e293b;
+    color: #38bdf8;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-menu-toggle:focus-visible,
+.nav-links a:focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 4px;
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        position: relative;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 15px 20px;
+        background: #1e293b;
+        border: 1px solid #334155;
+        border-radius: 0 0 12px 12px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 5px;
+    }
+       }
